@@ -104,13 +104,13 @@ body{padding-top:86px}
 /* Movimentos leves para dar retorno visual sem atrapalhar a leitura. */
 @keyframes header-arrive{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:translateY(0)}}
 @keyframes content-arrive{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-.hero-copy,.hero-art,.intro-content,.intro-stats,.section-heading,.timeline-heading,.author-copy,.author-art,.wordsearch-intro,.puzzle-panel,.word-list-panel{animation:content-arrive .65s ease both}
+.hero-copy,.hero-art,.author-copy,.author-art,.puzzle-panel,.word-list-panel{animation:content-arrive .65s ease both}
 .hero-art,.intro-stats,.author-art,.word-list-panel{animation-delay:.12s}
 .art-card,.place-card,.timeline-item{transition:transform .24s ease,box-shadow .24s ease,background-color .24s ease}
 .art-card:hover,.place-card:hover{transform:translateY(-4px)}
 .timeline-item:hover{background:rgba(255,255,255,.28)}
 .main-nav a:focus-visible,.wordmark:focus-visible,.menu-toggle:focus-visible,.wordsearch-nav a:focus-visible{outline:2px solid #b58a2b;outline-offset:5px}
-@media(prefers-reduced-motion:reduce){.hero-copy,.hero-art,.intro-content,.intro-stats,.section-heading,.timeline-heading,.author-copy,.author-art,.wordsearch-intro,.puzzle-panel,.word-list-panel{animation:none}.art-card,.place-card,.timeline-item{transition:background-color .2s ease}}
+@media(prefers-reduced-motion:reduce){.hero-copy,.hero-art,.author-copy,.author-art,.puzzle-panel,.word-list-panel{animation:none}.art-card,.place-card,.timeline-item{transition:background-color .2s ease}}
 
 /* O cabeçalho fica acima de todo o conteúdo, mesmo durante a rolagem. */
 .site-header{z-index:9999!important;background:var(--paper)!important;box-shadow:0 7px 24px rgba(32,42,56,.12)}
@@ -125,3 +125,19 @@ body{padding-top:86px}
 .menu-toggle[aria-expanded="true"]{transform:rotate(90deg)}
 .menu-toggle{transition:transform .25s ease}
 @media(prefers-reduced-motion:reduce){.scroll-reveal{opacity:0;transform:none;transition:opacity .28s ease!important;transition-delay:0ms!important}.scroll-reveal.is-visible{opacity:1;transform:none;transition:opacity .28s ease!important}.menu-toggle{transition:none}}
+@media(prefers-reduced-motion:reduce){.hero-copy,.hero-art,.author-copy,.author-art,.puzzle-panel,.word-list-panel{animation:none!important}}
+@media(prefers-reduced-motion:reduce){.scroll-reveal,.scroll-reveal.is-visible{opacity:1!important;transform:none!important;transition:none!important}}
+
+.install-app-button{position:fixed;right:20px;bottom:20px;z-index:120;display:inline-flex;align-items:center;gap:9px;padding:13px 17px;border:0;border-radius:999px;background:var(--blue);color:white;font:600 11px var(--sans);box-shadow:0 8px 24px rgba(32,42,56,.22);cursor:pointer;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.install-app-button::before{content:'↓';font-size:15px;color:var(--yellow)}
+.install-app-button:hover{background:#162944;box-shadow:0 11px 28px rgba(32,42,56,.28);transform:translateY(-3px)}
+.install-app-button[hidden]{display:none}
+.install-help-dialog{width:min(420px,calc(100% - 32px));padding:0;border:1px solid rgba(32,42,56,.15);background:var(--paper);color:var(--ink);box-shadow:0 22px 70px rgba(20,30,42,.3)}
+.install-help-dialog::backdrop{background:rgba(20,30,42,.55);backdrop-filter:blur(3px)}
+.install-help-dialog form{position:relative;padding:32px}
+.install-help-dialog h2{font:500 30px/1.2 var(--serif);margin:12px 0}
+.install-help-text{font-size:12px;line-height:1.8;color:#696a62}
+.install-dialog-close{position:absolute;top:12px;right:14px;border:0;background:none;color:var(--ink);font-size:25px;cursor:pointer}
+.install-dialog-ok{margin-top:13px;border:0;cursor:pointer}
+@media(max-width:620px){.install-app-button{right:14px;bottom:14px;padding:11px 14px;font-size:10px}.install-help-dialog form{padding:28px 22px}}
+@media(prefers-reduced-motion:reduce){.install-app-button{transition:none}}

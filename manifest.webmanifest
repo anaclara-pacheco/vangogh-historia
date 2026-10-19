@@ -1,0 +1,31 @@
+{
+  "id": "./index.html",
+  "name": "Van Gogh — Uma vida em cores",
+  "short_name": "Van Gogh",
+  "description": "Conheça a vida, os lugares e as obras de Vincent van Gogh.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "background_color": "#f4efdf",
+  "theme_color": "#f4efdf",
+  "categories": ["education", "art"],
+  "icons": [
+    {
+      "src": "./app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Jogar caça-palavras",
+      "short_name": "Jogo",
+      "url": "./caca-palavras.html",
+      "icons": [{ "src": "./app-icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+    }
+  ]
+}
