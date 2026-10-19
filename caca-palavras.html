@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f4efdf" />
+  <meta name="description" content="Encontre no caça-palavras os lugares por onde Van Gogh passou e suas obras mais conhecidas." />
+  <title>Caça-palavras — Van Gogh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <script src="caca-palavras.js" defer></script>
+</head>
+<body class="wordsearch-page">
+  <header class="site-header">
+    <a class="wordmark" href="index.html#inicio" aria-label="Van Gogh, página inicial">V<span>.</span>Gogh</a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="index.html#obras">Obras</a>
+      <a href="index.html#trajetoria">História</a>
+      <a href="index.html#lugares">Lugares</a>
+      <a href="index.html#legado">Legado</a>
+      <a href="caca-palavras.html" aria-current="page">Jogo</a>
+    </nav>
+  </header>
+
+  <main class="wordsearch-main">
+    <section class="wordsearch-intro" aria-labelledby="game-title">
+      <p class="eyebrow"><span class="eyebrow-line"></span> UM JOGO SOBRE VAN GOGH</p>
+      <h1 id="game-title">Olhos atentos,<br /><em>arte escondida.</em></h1>
+      <p>Encontre os lugares por onde Vincent viveu e algumas das obras que deixou para o mundo.</p>
+    </section>
+
+    <section class="wordsearch-game" aria-label="Caça-palavras interativo">
+      <div class="puzzle-panel">
+        <div class="puzzle-heading">
+          <div><span class="puzzle-label">CAÇA-PALAVRAS</span><h2>Encontre as palavras</h2></div>
+          <span class="puzzle-count" id="found-count">0 / 14</span>
+        </div>
+        <p class="game-instructions">Clique na primeira e na última letra da palavra. Ela pode estar na horizontal, vertical ou diagonal — inclusive ao contrário.</p>
+        <div class="board-wrap"><div class="wordsearch-board" id="wordsearch-board" role="group" aria-label="Grade de letras do caça-palavras"></div></div>
+        <div class="game-status" id="game-status" role="status" aria-live="polite">Escolha uma palavra na grade para começar.</div>
+      </div>
+
+      <aside class="word-list-panel" aria-label="Lista de palavras para encontrar">
+        <div class="word-list-heading"><span class="puzzle-label">SUA MISSÃO</span><h2>14 palavras</h2></div>
+        <div class="word-group"><h3><span>01</span> LUGARES</h3><ul id="places-list"></ul></div>
+        <div class="word-group"><h3><span>02</span> OBRAS DE ARTE</h3><ul id="artworks-list"></ul></div>
+        <button class="button button-dark reset-puzzle" id="reset-puzzle" type="button">Embaralhar letras <span>↻</span></button>
+      </aside>
+    </section>
+    <p class="wordsearch-credit">Um passatempo criado por <a href="autora.html">Ana Clara</a> · <a href="index.html">Voltar à página principal</a></p>
+  </main>
+</body>
+</html>
