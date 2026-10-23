@@ -74,7 +74,7 @@ installButton.addEventListener('click', async () => {
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 if (!reducedMotion && 'IntersectionObserver' in window) {
   const revealTargets = document.querySelectorAll(
-    '.intro, .art-card, .timeline-heading, .timeline-item, .places-section .section-heading, .place-card, .legacy-copy, .author-layout, .author-note, .wordsearch-intro, .wordsearch-game, .wordsearch-credit'
+    '.intro, .art-card, .timeline-heading, .timeline-item, .places-section .section-heading, .place-card, .legacy-copy, .author-layout, .author-note, .wordsearch-intro, .wordsearch-game, .wordsearch-credit, .people-intro, .people-card'
   );
 
   const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -99,6 +99,6 @@ if (!reducedMotion && 'IntersectionObserver' in window) {
     revealObserver.observe(element);
   });
 } else {
-  document.querySelectorAll('.intro, .art-card, .timeline-heading, .timeline-item, .places-section .section-heading, .place-card, .legacy-copy, .author-layout, .author-note, .wordsearch-intro, .wordsearch-game, .wordsearch-credit')
+  document.querySelectorAll('.intro, .art-card, .timeline-heading, .timeline-item, .places-section .section-heading, .place-card, .legacy-copy, .author-layout, .author-note, .wordsearch-intro, .wordsearch-game, .wordsearch-credit, .people-intro, .people-card')
     .forEach((element) => element.classList.add('is-visible'));
 }

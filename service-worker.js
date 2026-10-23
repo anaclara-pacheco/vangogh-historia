@@ -1,9 +1,10 @@
-const CACHE_NAME = 'van-gogh-site-v1';
+const CACHE_NAME = 'van-gogh-site-v2';
 const CORE_ASSETS = [
   './',
   './index.html',
   './autora.html',
   './caca-palavras.html',
+  './pessoas.html',
   './style.css',
   './script.js',
   './caca-palavras.js',

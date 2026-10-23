@@ -141,3 +141,24 @@ body{padding-top:86px}
 .install-dialog-ok{margin-top:13px;border:0;cursor:pointer}
 @media(max-width:620px){.install-app-button{right:14px;bottom:14px;padding:11px 14px;font-size:10px}.install-help-dialog form{padding:28px 22px}}
 @media(prefers-reduced-motion:reduce){.install-app-button{transition:none}}
+
+.people-page{min-height:100vh}
+.people-page .main-nav a[aria-current="page"]{color:#b27c12}
+.people-main{padding-top:76px;padding-bottom:84px}
+.people-intro{max-width:710px;margin:0 auto 48px}
+.people-intro h1{font:500 clamp(58px,8vw,92px)/.98 var(--serif);letter-spacing:-.06em;margin:24px 0}
+.people-intro h1 em{font-weight:500;color:#b78b30}
+.people-intro>p:last-child{max-width:520px;margin:0;font-size:13px;line-height:1.9;color:#696a62}
+.people-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.people-card{min-height:275px;padding:30px 32px;background:#f8f4e8;position:relative}
+.people-period{font-size:8px;letter-spacing:.14em;color:#9a772c;font-weight:700}
+.people-number{position:absolute;top:24px;right:28px;font:500 35px var(--serif);color:rgba(36,61,97,.18)}
+.people-card h2{font:500 25px/1.2 var(--serif);max-width:360px;margin:32px 0 7px}
+.people-relation{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#52644e;margin:0 0 15px}
+.people-card>p:last-child{max-width:500px;margin:0;font-size:11px;line-height:1.85;color:#696a62}
+.people-card-highlight{background:#e3e5d8}
+.people-note{display:flex;align-items:flex-start;gap:11px;max-width:790px;margin:28px auto 0;font-size:10px;line-height:1.8;color:#77786e}
+.people-note .caption-dot{flex:0 0 6px;margin-top:5px}
+.people-footer{border-top:1px solid var(--line)}
+@media(max-width:850px){.people-main{padding-top:62px;padding-bottom:70px}.people-card{padding:25px 23px;min-height:300px}.people-card h2{font-size:22px}}
+@media(max-width:620px){.people-main{padding:43px 23px 55px}.people-intro{margin-bottom:30px}.people-intro h1{font-size:64px;margin:21px 0}.people-intro>p:last-child{font-size:11px}.people-grid{grid-template-columns:1fr}.people-card{min-height:0;padding:24px 21px}.people-card h2{font-size:22px;margin:23px 0 7px}.people-card>p:last-child{font-size:10px}.people-number{top:18px;right:20px}.people-note{font-size:9px;line-height:1.75;margin-top:22px}}
